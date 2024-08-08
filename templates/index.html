@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт косметологии, предлагающий широкий спектр процедур для вашего лица и тела.">
+    <title>{{ title }}</title>
+
+    <!-- Подключение Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Подключение пользовательских стилей -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+            <a class="navbar-brand" href="#">{{ title }}</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/procedures">Процедуры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/analytics">Аналитика</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <section class="intro text-center mb-5">
+            <h2>Добро пожаловать на наш сайт косметологии!</h2>
+            <p class="lead">Мы предлагаем широкий спектр процедур для вашего лица и тела.</p>
+        </section>
+        <section class="image-section text-center mb-5">
+            <img src="/static/images/kosmetologiya.jpg" alt="Косметология" class="img-fluid rounded-lg shadow-lg">
+        </section>
+    </main>
+
+    <footer class="bg-light text-center py-4 shadow-sm">
+        <p class="mb-0">&copy; 2024 Ваш сайт косметологии. Все права защищены.</p>
+    </footer>
+
+    <!-- Подключение Bootstrap JS и зависимостей -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
